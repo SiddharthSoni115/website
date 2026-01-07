@@ -3,341 +3,589 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siddharth Soni - Portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        header {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        h1 {
-            color: #667eea;
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-
-        .subtitle {
-            color: #666;
-            font-size: 1.2em;
-        }
-
-        .section {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            margin-bottom: 30px;
-        }
-
-        h2 {
-            color: #667eea;
-            margin-bottom: 20px;
-            font-size: 1.8em;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 10px;
-        }
-
-        .education-item, .project-item {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 15px;
-            border-left: 4px solid #764ba2;
-        }
-
-        .education-item h3 {
-            color: #764ba2;
-            margin-bottom: 10px;
-        }
-
-        .education-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 10px;
-            margin-top: 10px;
-        }
-
-        .education-detail {
-            display: flex;
-            justify-content: space-between;
-            padding: 8px 0;
-        }
-
-        .label {
-            font-weight: 600;
-            color: #555;
-        }
-
-        .value {
-            color: #333;
-        }
-
-        .skills-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
-
-        .skill-category {
-            background: #f8f9fa;
-            padding: 15px;
-            border-radius: 10px;
-            border-left: 4px solid #667eea;
-        }
-
-        .skill-category h3 {
-            color: #667eea;
-            margin-bottom: 10px;
-            font-size: 1.1em;
-        }
-
-        .skill-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 10px;
-        }
-
-        .tag {
-            background: #667eea;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9em;
-        }
-
-        .project-item h3 {
-            color: #764ba2;
-            margin-bottom: 10px;
-        }
-
-        .project-type {
-            background: #764ba2;
-            color: white;
-            padding: 3px 10px;
-            border-radius: 5px;
-            font-size: 0.85em;
-            display: inline-block;
-            margin-bottom: 10px;
-        }
-
-        .achievement {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            font-size: 1.2em;
-        }
-
-        .achievement strong {
-            font-size: 1.5em;
-            display: block;
-            margin-top: 10px;
-        }
-
-        ul {
-            margin-left: 20px;
-            margin-top: 10px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2em;
-            }
-
-            .section {
-                padding: 20px;
-            }
-        }
-    </style>
+    <meta name="description" content="Raman Singh - AI/ML Researcher & Engineer | IIT Delhi M.Sc Mathematics | Specializing in Deep Learning, Portfolio Optimization, and MLOps">
+    <meta name="keywords" content="AI, Machine Learning, Deep Learning, Portfolio Optimization, MLOps, IIT Delhi, Data Science">
+    <meta name="author" content="Raman Singh">
+    
+    <title>Raman Singh - AI/ML Researcher & Engineer | IIT Delhi</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>SIDDHARTH SONI</h1>
-            <p class="subtitle">M.Sc. Mathematics | Data Analytics Enthusiast</p>
-        </header>
-
-        <div class="section">
-            <h2>Academic Details</h2>
-            <div class="education-item">
-                <h3>M.Sc in Mathematics</h3>
-                <div class="education-grid">
-                    <div class="education-detail">
-                        <span class="label">Institute:</span>
-                        <span class="value">IIT Delhi</span>
-                    </div>
-                    <div class="education-detail">
-                        <span class="label">CGPA:</span>
-                        <span class="value">5.5</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="education-item">
-                <h3>B.Sc (Hons.) Mathematics</h3>
-                <div class="education-grid">
-                    <div class="education-detail">
-                        <span class="label">Institute:</span>
-                        <span class="value">Jiwaji University</span>
-                    </div>
-                    <div class="education-detail">
-                        <span class="label">CGPA:</span>
-                        <span class="value">7.78</span>
-                    </div>
-                    <div class="education-detail">
-                        <span class="label">Year:</span>
-                        <span class="value">2023</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="education-item">
-                <h3>Class XII - CBSE</h3>
-                <div class="education-grid">
-                    <div class="education-detail">
-                        <span class="label">School:</span>
-                        <span class="value">St. Mary's School</span>
-                    </div>
-                    <div class="education-detail">
-                        <span class="label">Marks:</span>
-                        <span class="value">82.8%</span>
-                    </div>
-                    <div class="education-detail">
-                        <span class="label">Year:</span>
-                        <span class="value">2020</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="education-item">
-                <h3>Class X - CBSE</h3>
-                <div class="education-grid">
-                    <div class="education-detail">
-                        <span class="label">School:</span>
-                        <span class="value">St. Mary's School</span>
-                    </div>
-                    <div class="education-detail">
-                        <span class="label">Marks:</span>
-                        <span class="value">75.8%</span>
-                    </div>
-                    <div class="education-detail">
-                        <span class="label">Year:</span>
-                        <span class="value">2018</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Technical Skills</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">SQL</span>
-                        <span class="tag">C++</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Libraries & Frameworks</h3>
-                    <div class="skill-tags">
-                        <span class="tag">NumPy</span>
-                        <span class="tag">Pandas</span>
-                        <span class="tag">Matplotlib</span>
-                        <span class="tag">Seaborn</span>
-                        <span class="tag">Plotly</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Tools & Technologies</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Git</span>
-                        <span class="tag">Tableau</span>
-                        <span class="tag">Streamlit</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Professional Training</h2>
-            <div class="education-item">
-                <h3>CAMPUSX DSMP 2.0</h3>
-                <ul>
-                    <li>Python (Basic to Advanced)</li>
-                    <li>SQL (Basic to Advanced)</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Projects</h2>
-            <div class="project-item">
-                <span class="project-type">Data Analysis</span>
-                <h3>Literacy Rate Analysis</h3>
-                <p><strong>Dataset:</strong> India's district-level literacy patterns using Census 2011</p>
-                <p style="margin-top: 15px;"><strong>Key Findings:</strong></p>
-                <ul>
-                    <li>Population distribution is highly uneven, with a few large states contributing a major share</li>
-                    <li>Literacy varies widely (≈35–40% to >85%), with southern and western districts generally higher</li>
-                    <li>Male and female literacy are strongly correlated, indicating parallel educational progress</li>
-                    <li>Population size does not strongly predict literacy levels</li>
-                    <li>Clear north–south geographic variation in literacy rates</li>
-                    <li>States like Kerala and Tamil Nadu show consistently high literacy</li>
-                    <li>Larger states exhibit wide internal variation in literacy rates</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Academic Courses</h2>
-            <div class="skill-tags">
-                <span class="tag">Algebra</span>
-                <span class="tag">Linear Algebra</span>
-                <span class="tag">Introduction to Computer Programming</span>
-                <span class="tag">Introduction to Probability</span>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="achievement">
-                Joint Admission Test (JAM)
-                <strong>Rank: 187</strong>
-            </div>
-        </div>
+    <!-- Background Elements -->
+    <canvas id="neural-bg" aria-hidden="true"></canvas>
+    <div id="particles" aria-hidden="true"></div>
+    <div class="gradient-orbs" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
     </div>
+
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="#home" aria-label="Raman Singh - Home">
+                <div class="brand-logo">
+                    <span class="brand-icon">&lt;RS/&gt;</span>
+                </div>
+                <div class="brand-info">
+                    <span class="brand-name">Raman Singh</span>
+                    <span class="brand-subtitle">IIT Delhi</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-md-12">
+                        <div class="hero-content">
+                            <div class="hero-badge" data-aos="fade-up">
+                                <span class="badge-dot"></span>
+                                <span>Available for Research Collaborations</span>
+                            </div>
+                            
+                            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                                Hi, I'm <span class="gradient-text">Raman Singh</span>
+                            </h1>
+                            
+                            <div class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                                <span class="typing-text"></span>
+                                <span class="cursor">|</span>
+                            </div>
+                            
+                            <p class="hero-description" data-aos="fade-up" data-aos-delay="300">
+                                M.Sc. Mathematics student at <strong>IIT Delhi</strong> with a passion for pushing the boundaries of AI. 
+                                Currently researching <strong>portfolio optimization</strong> using hybrid AI frameworks combining 
+                                <strong>RL, GNNs, and LLMs</strong>.
+                            </p>
+                            
+                            <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+                                <div class="stat-card">
+                                    <div class="stat-value">9.44</div>
+                                    <div class="stat-label">CGPA at IIT-D</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-value">15+</div>
+                                    <div class="stat-label">ML Projects</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-value">Top 1%</div>
+                                    <div class="stat-label">INSPIRE Scholar</div>
+                                </div>
+                            </div>
+                            
+                            <div class="hero-cta" data-aos="fade-up" data-aos-delay="500">
+                                <a href="#research" class="btn-primary">
+                                    <span>View Research</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                                <a href="#contact" class="btn-secondary">
+                                    <span>Get in Touch</span>
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-5 col-md-12 d-none d-lg-block">
+                        <div class="hero-visual" data-aos="fade-left" data-aos-delay="300">
+                            <div class="profile-card">
+                                <div class="profile-image">
+                                  <img src="img.png" alt="Raman Singh" class="profile-photo">
+                                     <div class="profile-ring"></div>
+                                </div>
+
+                                <div class="tech-stack-floating">
+                                    <div class="tech-badge" style="--delay: 0s">
+                                        <i class="fab fa-python"></i>
+                                    </div>
+                                    <div class="tech-badge" style="--delay: 0.2s">
+                                        <i class="fas fa-brain"></i>
+                                    </div>
+                                    <div class="tech-badge" style="--delay: 0.4s">
+                                        <i class="fab fa-aws"></i>
+                                    </div>
+                                    <div class="tech-badge" style="--delay: 0.6s">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="section-header" data-aos="fade-right">
+                            <span class="section-tag">About Me</span>
+                            <h2 class="section-title">Bridging Mathematics & <span class="gradient-text">Artificial Intelligence</span></h2>
+                        </div>
+                        <div class="about-content" data-aos="fade-right" data-aos-delay="100">
+                            <p class="lead">
+                                As a mathematics postgraduate at <strong>IIT Delhi</strong>, I bring a unique blend of 
+                                rigorous mathematical foundations and cutting-edge AI expertise to solve complex real-world problems.
+                            </p>
+                            <p>
+                                My research focuses on developing hybrid AI systems that combine the best of multiple paradigms—
+                                <strong>Reinforcement Learning</strong> for sequential decision-making, <strong>Graph Neural Networks</strong> 
+                                for relational reasoning, and <strong>Large Language Models</strong> for intelligent interpretation.
+                            </p>
+                            <p>
+                                Beyond research, I'm passionate about building production-ready ML systems with proper MLOps practices, 
+                                ensuring that AI solutions are not just accurate but also reliable, scalable, and maintainable.
+                            </p>
+                            
+                            <div class="achievement-badges">
+                                <div class="achievement-badge">
+                                    <i class="fas fa-trophy"></i>
+                                    <span>INSPIRE Scholar (Top 1%)</span>
+                                </div>
+                                <div class="achievement-badge">
+                                    <i class="fas fa-medal"></i>
+                                    <span>IIT JAM AIR 266</span>
+                                </div>
+                                <div class="achievement-badge">
+                                    <i class="fas fa-award"></i>
+                                    <span>BFCET Scholarship (AIR 1)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="expertise-grid" data-aos="fade-left">
+                            <div class="expertise-card">
+                                <div class="expertise-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <h4>Deep Learning</h4>
+                                <p>CNNs, RNNs, Transformers, GANs, and state-of-the-art architectures</p>
+                            </div>
+                            <div class="expertise-card">
+                                <div class="expertise-icon">
+                                    <i class="fas fa-project-diagram"></i>
+                                </div>
+                                <h4>MLOps</h4>
+                                <p>End-to-end ML pipelines with Docker, DVC, MLflow, and CI/CD</p>
+                            </div>
+                            <div class="expertise-card">
+                                <div class="expertise-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h4>AI Research</h4>
+                                <p>Portfolio optimization, algorithmic ML, and healthcare AI</p>
+                            </div>
+                            <div class="expertise-card">
+                                <div class="expertise-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <h4>Full Stack ML</h4>
+                                <p>From research to production deployment on cloud platforms</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <span class="section-tag">Technical Skills</span>
+                    <h2 class="section-title">My <span class="gradient-text">Arsenal</span></h2>
+                    <p class="section-description">A comprehensive toolkit for building intelligent systems</p>
+                </div>
+                
+                <div class="skills-container">
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="0">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>Machine Learning & AI</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">Keras</span>
+                            <span class="skill-tag">XGBoost</span>
+                            <span class="skill-tag">LightGBM</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-language"></i>
+                            </div>
+                            <h3>NLP & LLMs</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span class="skill-tag">Transformers</span>
+                            <span class="skill-tag">LangChain</span>
+                            <span class="skill-tag">RAG Systems</span>
+                            <span class="skill-tag">QLoRA</span>
+                            <span class="skill-tag">Prompt Engineering</span>
+                            <span class="skill-tag">Hugging Face</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h3>MLOps & DevOps</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">DVC</span>
+                            <span class="skill-tag">MLflow</span>
+                            <span class="skill-tag">GitHub Actions</span>
+                            <span class="skill-tag">Dagshub</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <h3>Cloud & Deployment</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span class="skill-tag">AWS (EC2, S3, ECR)</span>
+                            <span class="skill-tag">Flask</span>
+                            <span class="skill-tag">FastAPI</span>
+                            <span class="skill-tag">Streamlit</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Programming & Tools</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C/C++</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">LaTeX</span>
+                            <span class="skill-tag">Mathematica</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">NumPy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research" class="research-section">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <span class="section-tag">Current Research</span>
+                    <h2 class="section-title">Active <span class="gradient-text">Research</span></h2>
+                    <p class="section-description">M.Sc. Thesis Work at IIT Delhi</p>
+                </div>
+                
+                <div id="research-container" class="research-grid">
+                    <div class="loading-container">
+                        <div class="spinner"></div>
+                        <p>Loading research...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <span class="section-tag">Portfolio</span>
+                    <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                    <p class="section-description">Research projects and production-ready ML systems</p>
+                </div>
+                
+                <div id="projects-container" class="projects-grid">
+                    <div class="loading-container">
+                        <div class="spinner"></div>
+                        <p>Loading projects...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Academic Service Section -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <span class="section-tag">Experience</span>
+                    <h2 class="section-title">Professional <span class="gradient-text">Journey</span></h2>
+                    <p class="section-description">Industry experience and academic service</p>
+                </div>
+                
+                <div class="experience-timeline">
+                    <!-- SME Chegg -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="0">
+                        <div class="timeline-marker">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-title">Subject Matter Expert (Mathematics)</h3>
+                                    <p class="timeline-company">Chegg India</p>
+                                </div>
+                                <span class="timeline-date">Jun 2023 – Present</span>
+                            </div>
+                            <ul class="timeline-details">
+                                <li>Provide clear, structured solutions to advanced undergraduate mathematics problems</li>
+                                <li>Use LaTeX for precise mathematical exposition and rigorous presentation</li>
+                                <li>Develop strong academic writing and problem-solving skills through high-volume queries</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="tag">Mathematics</span>
+                                <span class="tag">LaTeX</span>
+                                <span class="tag">Academic Writing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Research Intern -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="timeline-marker">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-title">Research Intern</h3>
+                                    <p class="timeline-company">SRIVIPRA, Sri Venkateswara College, University of Delhi</p>
+                                </div>
+                                <span class="timeline-date">Jun 2023 – Sep 2023</span>
+                            </div>
+                            <ul class="timeline-details">
+                                <li>Worked on applications of Partial Differential Equations (PDEs) in elastic fluid dynamics</li>
+                                <li>Performed analytical modeling and numerical simulations using Mathematica (NDSolve, visualization)</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="tag">PDEs</span>
+                                <span class="tag">Fluid Dynamics</span>
+                                <span class="tag">Mathematica</span>
+                                <span class="tag">Numerical Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MathSoc Executive -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="timeline-marker">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-title">Executive Member</h3>
+                                    <p class="timeline-company">Mathematics Society (MathSoc), IIT Delhi</p>
+                                </div>
+                                <span class="timeline-date">Jun 2025 – Present</span>
+                            </div>
+                            <ul class="timeline-details">
+                                <li>Contribute to organizing academic talks, workshops, and student-led mathematical initiatives</li>
+                                <li>Support faculty–student coordination to strengthen departmental academic culture</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="tag">Leadership</span>
+                                <span class="tag">Event Management</span>
+                                <span class="tag">Academic Service</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rendezvous Coordinator -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="timeline-marker">
+                            <i class="fas fa-clipboard-list"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-title">Infrastructure Coordinator</h3>
+                                    <p class="timeline-company">Rendezvous 2025, IIT Delhi</p>
+                                </div>
+                                <span class="timeline-date">2025</span>
+                            </div>
+                            <ul class="timeline-details">
+                                <li>Coordinated infrastructure planning and on-ground logistics for large-scale campus events</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="tag">Leadership</span>
+                                <span class="tag">Logistics</span>
+                                <span class="tag">Event Coordination</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="blog-section">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <span class="section-tag">Blog</span>
+                    <h2 class="section-title">Latest <span class="gradient-text">Articles</span></h2>
+                    <p class="section-description">Sharing insights on AI, ML, and technology</p>
+                </div>
+                
+                <div id="blog-container" class="blog-grid">
+                    <div class="loading-container">
+                        <div class="spinner"></div>
+                        <p>Loading articles...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <span class="section-tag">Contact</span>
+                    <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                    <p class="section-description">Open to research collaborations and opportunities</p>
+                </div>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                            <form id="contact-form" action="https://formspree.io/f/mwpqwgok" method="POST" novalidate>
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                                            <label for="name">Your Name</label>
+                                            <div class="invalid-feedback">Please enter your name</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                                            <label for="email">Your Email</label>
+                                            <div class="invalid-feedback">Please enter a valid email</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" id="message" name="message" placeholder="Your Message" style="height: 150px" required></textarea>
+                                            <label for="message">Your Message</label>
+                                            <div class="invalid-feedback">Please enter your message</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn-primary w-100">
+                                            <span>Send Message</span>
+                                            <i class="fas fa-paper-plane"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col-12">
+                                        <div id="form-status" class="form-status" role="alert"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <div class="social-links" data-aos="fade-up" data-aos-delay="200">
+                            <a href="https://www.linkedin.com/in/raman-singh-brar" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/Raman-Brar-IITD" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://mlwithbrar.hashnode.dev/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Blog">
+                                <i class="fas fa-blog"></i>
+                            </a>
+                            <a href="mailto:your.email@example.com" class="social-link" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Raman Singh. All rights reserved.</p>
+                <p class="footer-tagline">Turning data into intelligence, one model at a time.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
